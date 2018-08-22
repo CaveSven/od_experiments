@@ -1,0 +1,5 @@
+cython=0.28.5
+tensorboard=1.9.0
+tensorflow=1.9.0
+tensorflow-base=1.9.0
+tensorflow-gpu=1.9.0
