@@ -25,7 +25,7 @@ tinyimagenet:
 	mkdir -p data/processed/tiny-imagenet-200
 	cd data/raw && curl -O http://cs231n.stanford.edu/tiny-imagenet-200.zip && aunpack tiny-imagenet-200.zip && rm tiny-imagenet-200.zip 
 ## Make Dataset
-data: requirements
+data: 
 	$(PYTHON_INTERPRETER) src/data/preprocess_imagenet_validation_data.py data/raw/tiny-imagenet-200/val/images data/raw/tiny-imagenet-200/val/val_annotations.txt
 	$(PYTHON_INTERPRETER) src/data/build_imagenet_data.py --train_directory data/raw/tiny-imagenet-200/train --validation_directory data/raw/tiny-imagenet-200/val/images --output_directory data/processed/tiny-imagenet-200 --num_threads 4 --labels_file data/raw/tiny-imagenet-200/wnids.txt --imagenet_metadata_file data/raw/tiny-imagenet-200/words.txt
 

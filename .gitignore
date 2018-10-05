@@ -47,8 +47,11 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
+# Tensorboard:
+logs/
+
+# Models
+/models/
 
 # Sphinx documentation
 docs/_build/
