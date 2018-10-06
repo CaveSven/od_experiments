@@ -4,7 +4,7 @@ from tensorflow.python.keras.applications.imagenet_utils import preprocess_input
 from tensorflow.python.keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau
 from tensorflow.python.keras.optimizers import SGD, Adam
 
-from src.models.vgg.vgg11 import build_vgg
+from src.models.vgg.vgg19 import build_vgg
 from datetime import datetime
 
 IMG_ROWS = 64
